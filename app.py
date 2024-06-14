@@ -3,7 +3,7 @@ import sqlite3
 from sqlite3 import Error
 
 app = Flask(__name__)
-DATABASE = "webtags.db"
+DATABASE = "pokemon.db"
 
 
 def create_connect(db_filename):
@@ -22,7 +22,7 @@ def render_home_page():  # put application's code here
 
 @app.route('/display/<table_type>')
 def render_display_page(table_type):  # put application's code here
-    query = "SELECT tag, description FROM web_tags WHERE type= ?"
+    query = "SELECT name, generation, type1, type2, total, hp, attack, defence, sp_attack, sp_defence, speed, generation FROM pokemon_data WHERE type1 = ?"
     connection = create_connect(DATABASE)
     cursor = connection.cursor()
     cursor.execute(query, (table_type, ))
@@ -40,7 +40,7 @@ def render_search_page():  # put application's code here
     title = "Search for: '" + look_up + "' "
     look_up = "%" + look_up + "%"
 
-    query = "SELECT tag, description FROM web_tags WHERE tag LIKE ? OR description LIKE ?"
+    query = "SELECT type1, type2 FROM pokemon_data WHERE type1 LIKE ? OR type2 LIKE ?"
     connection = create_connect(DATABASE)
     cursor = connection.cursor()
     cursor.execute(query, (look_up, look_up))
