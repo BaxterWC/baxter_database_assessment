@@ -1,81 +1,120 @@
 html {
-    background-color: #333333;
+    background-color: #3a5335;
 }
 
 body {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #1a2e1a;
+    color: #e4f9e0;
     font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
-    width: 75%;
+    width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-gap: 10px;
 }
 
 header, footer {
-    background-color: #222222;
+    background-color: #2b3d2b;
     padding: 10px;
     margin: 0;
-    grid-column: 1/3;
+    grid-column: 1;
     font-weight: bolder;
 }
 
 nav {
-    background-color: #444444;
+    background-color: #4b6b4b;
     margin: 0;
     padding: 3px;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
- nav ul li {
+nav ul li {
     padding: 3px;
- }
+}
 
- a {
-     color: #dddddd;
-     text-decoration: none;
-     font-weight: bold;
- }
+a {
+    color: #c3e6c3;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #2b3d2b;
+    padding: 5px;
+    border-radius: 5px;
+}
 
- a:hover {
-     color: #ff0000;
- }
+label {
+    color: #c3e6c3;
+    text-decoration: none;
+    font-weight: bold;
+}
 
- main {
-     padding: 5px;
- }
+a:hover {
+    color: #00ff00;
+}
 
- table {
-     border: 2px solid #ffffff;
-     width: 100%;
-     border-collapse: collapse;
- }
+main {
+    padding: 5px;
+    grid-column: 1;
+    grid-row: 3;
+}
 
- th, td {
+table {
+    border: 2px solid #e4f9e0;
+    width: 100%;
+    border-collapse: collapse;
+}
 
-     border: 1px solid #ffffff;
-     padding: 5px;
- }
+th, td {
+    border: 1px solid #e4f9e0;
+    padding: 5px;
+}
 
- th {
-     color: #000000;
-     background-color: #999999;
- }
+th {
+    color: #1a2e1a;
+    background-color: #a2d5a2;
+}
 
- form {
-     color: #dddddd;
-     text-decoration: none;
-     font-weight: bold;
- }
+form {
+    display: inline-block;
+    background-color: #2b3d2b;
+    padding: 5px;
+    border-radius: 5px;
+}
 
- form input[type=submit]:hover {
-     color:red;
- }
+form input[type="text"] {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
- input {
-     color: #000000;
-     text-decoration: none;
-     font-weight: bold;
- }
+form input[type="submit"] {
+    background-color: #a2d5a2;
+    color: #1a2e1a;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #00ff00;
+    color: #000000;
+}
+
+input {
+    color: #1a2e1a;
+    text-decoration: none;
+    font-weight: bold;
+}

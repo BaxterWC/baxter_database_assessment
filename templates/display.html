@@ -5,8 +5,19 @@
         <table>
             <thead>
             <tr>
+                <th>Pokedex Number</th>
                 <th>Name</th>
-                <th>Description</th>
+                <th>Primary Type</th>
+                <th>Secondary Type</th>
+                <th>Health Stat</th>
+                <th>Attack Stat</th>
+                <th>Defence Stat</th>
+                <th>Special Attack Stat</th>
+                <th>Special defence Stat</th>
+                <th>Speed Stat</th>
+                <th>Base Stat Total</th>
+                <th>Generation</th>
+                <th>Legendary Status</th>
             </tr>
             </thead>
             <tbody>
@@ -25,10 +36,12 @@
                         <td> {{ row[9] }} </td>
                         <td> {{ row[10] }} </td>
                         <td> {{ row[11] }} </td>
-                        <td> {{ row[12] }} </td>
-
-
-
+                        <td> {% if row[12] == 1 %}
+                            Legendary
+                        {% else %}
+                            Non Legendary
+                        {% endif %}
+                        </td>
                     </tr>
                 {% endfor %}
 

@@ -22,10 +22,10 @@ def render_home_page():  # put application's code here
 
 @app.route('/display/<table_type>')
 def render_display_page(table_type):  # put application's code here
-    query = "SELECT name, generation, type1, type2, total, hp, attack, defence, sp_attack, sp_defence, speed, generation FROM pokemon_data WHERE type1 = ?"
+    query = "SELECT number, name, type1, type2, hp, attack, defence, sp_attack, sp_defence, speed, total, generation, legendary FROM pokemon_data WHERE type1 = ? OR type2 = ? OR legendary = ? OR all_mons = ?"
     connection = create_connect(DATABASE)
     cursor = connection.cursor()
-    cursor.execute(query, (table_type, ))
+    cursor.execute(query, (table_type, table_type, table_type, table_type))
 
     data_list = cursor.fetchall()
     print(data_list)
@@ -40,10 +40,10 @@ def render_search_page():  # put application's code here
     title = "Search for: '" + look_up + "' "
     look_up = "%" + look_up + "%"
 
-    query = "SELECT type1, type2 FROM pokemon_data WHERE type1 LIKE ? OR type2 LIKE ?"
+    query = "SELECT number, name, type1, type2, hp, attack, defence, sp_attack, sp_defence, speed, total, generation, legendary FROM pokemon_data WHERE name like ?"
     connection = create_connect(DATABASE)
     cursor = connection.cursor()
-    cursor.execute(query, (look_up, look_up))
+    cursor.execute(query, (look_up, ))
 
     data_list = cursor.fetchall()
     print(data_list)
