@@ -6,7 +6,7 @@ body {
     background-color: #1a2e1a;
     color: #e4f9e0;
     font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
-    width: 90%;
+    width: 96%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -35,7 +35,9 @@ nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
+
 nav ul li {
     padding: 3px;
 }

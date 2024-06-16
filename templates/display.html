@@ -1,11 +1,18 @@
     {% extends "base.html" %}
     {% block main %}
 
-        <h2>{{ table_type }}</h2>
+        <h2>{% if table_type  == '1' %}
+            Legendary
+        {% elif table_type == '0' %}
+            Non Legendary
+        {% else %}
+            {{ table_type }}
+        {% endif %}
+        </h2>
         <table>
             <thead>
             <tr>
-                <th>Pokedex Number</th>
+                <th>Pokédex Number</th>
                 <th>Name</th>
                 <th>Primary Type</th>
                 <th>Secondary Type</th>
