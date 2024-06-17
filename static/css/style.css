@@ -6,7 +6,7 @@ body {
     background-color: #1a2e1a;
     color: #e4f9e0;
     font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
-    width: 96%;
+    width: 97%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -23,19 +23,23 @@ header, footer {
 }
 
 nav {
+    width: auto;
+    height: 140%;
     background-color: #4b6b4b;
-    margin: 0;
+    margin: 0 auto;
     padding: 3px;
     grid-column: 1;
     grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -86,11 +90,20 @@ th {
     background-color: #a2d5a2;
 }
 
+form label {
+    color: #c3e6c3;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
 form {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     background-color: #2b3d2b;
     padding: 5px;
     border-radius: 5px;
+    border: 2px solid #2b3d2b;
 }
 
 form input[type="text"] {
@@ -110,6 +123,7 @@ form input[type="submit"] {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+    margin-left: 5px;
 }
 
 form input[type="submit"]:hover {

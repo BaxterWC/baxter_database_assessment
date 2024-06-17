@@ -2,9 +2,11 @@
     {% block main %}
 
         <h2>{% if table_type  == '1' %}
-            Legendary
+            Legendary Pokémon
         {% elif table_type == '0' %}
-            Non Legendary
+            Non Legendary Pokémon
+        {% elif table_type in ['Bug', 'Dark', 'Dragon', 'Electric', 'Fairy', 'Fighting', 'Fire', 'Flying', 'Ghost', 'Grass', 'Ground', 'Ice', 'Normal', 'Poison', 'Psychic', 'Rock', 'Steel', 'Water'] %}
+            {{ table_type }} Type Pokémon
         {% else %}
             {{ table_type }}
         {% endif %}
