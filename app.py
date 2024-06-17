@@ -16,12 +16,12 @@ def create_connect(db_filename):
 
 
 @app.route('/')
-def render_home_page():  # put application's code here
+def render_home_page():
     return render_template("index.html")
 
 
 @app.route('/display/<table_type>')
-def render_display_page(table_type):  # put application's code here
+def render_display_page(table_type):
     query = "SELECT number, name, type1, type2, hp, attack, defence, sp_attack, sp_defence, speed, total, generation, legendary FROM pokemon_data WHERE type1 = ? OR type2 = ? OR legendary = ? OR all_mons = ?"
     connection = create_connect(DATABASE)
     cursor = connection.cursor()
@@ -34,7 +34,7 @@ def render_display_page(table_type):  # put application's code here
 
 
 @app.route('/search', methods=['GET', 'POST'])
-def render_search_page():  # put application's code here
+def render_search_page():
 
     look_up = request.form['Search']
     title = "Search for: '" + look_up + "' "

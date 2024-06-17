@@ -80,6 +80,8 @@ th, td {
 }
 
 th {
+    position: sticky;
+    top: -1px;
     color: #1a2e1a;
     background-color: #a2d5a2;
 }
