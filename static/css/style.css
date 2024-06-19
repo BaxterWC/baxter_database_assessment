@@ -1,5 +1,6 @@
 html {
     background-color: #3a5335;
+    overflow-y: scroll;
 }
 
 body {
@@ -23,16 +24,12 @@ header, footer {
 }
 
 nav {
-    width: auto;
-    height: 140%;
+    font-size: 14px;
     background-color: #4b6b4b;
     margin: 0 auto;
     padding: 3px;
     grid-column: 1;
     grid-row: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav ul {
