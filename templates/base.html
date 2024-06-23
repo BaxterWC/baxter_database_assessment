@@ -5,27 +5,28 @@
     <title>Pokémon Database</title>
     <link type="text/css" rel="stylesheet" href="/static/css/style.css">
     <style>
-        nav ul li a[href='/display/Bug'] { background-color: #A8B820; }
-        nav ul li a[href='/display/Dark'] { background-color: #705848; }
-        nav ul li a[href='/display/Dragon'] { background-color: #7038F8; }
-        nav ul li a[href='/display/Electric'] { background-color: #F8D030; }
-        nav ul li a[href='/display/Fairy'] { background-color: #EE99AC; }
-        nav ul li a[href='/display/Fighting'] { background-color: #C03028; }
-        nav ul li a[href='/display/Fire'] { background-color: #F08030; }
-        nav ul li a[href='/display/Flying'] { background-color: #A890F0; }
-        nav ul li a[href='/display/Ghost'] { background-color: #705898; }
-        nav ul li a[href='/display/Grass'] { background-color: #78C850; }
-        nav ul li a[href='/display/Ground'] { background-color: #E0C068; }
-        nav ul li a[href='/display/Ice'] { background-color: #98D8D8; }
-        nav ul li a[href='/display/Normal'] { background-color: #A8A878; }
-        nav ul li a[href='/display/Poison'] { background-color: #A040A0; }
-        nav ul li a[href='/display/Psychic'] { background-color: #F85888; }
-        nav ul li a[href='/display/Rock'] { background-color: #B8A038; }
-        nav ul li a[href='/display/Steel'] { background-color: #B8B8D0; }
-        nav ul li a[href='/display/Water'] { background-color: #6890F0; }
-        nav ul li a[href='/display/0'] { background-color: #B3A125 }
-        nav ul li a[href='/display/1'] { background-color: #F08030; }
-        nav ul li a[href='/display/All Pokémon'] { background-color: #0b62c1; }
+        nav ul li a[href='/'] { background-color: #2b3d2b; color: #a2d5a2}
+        nav ul li a[href='/display/Bug'] { background-color: #A8B820; color: #3f4506}
+        nav ul li a[href='/display/Dark'] { background-color: #705848; color: #e1dbd8}
+        nav ul li a[href='/display/Dragon'] { background-color: #7038F8; color: #dedcff}
+        nav ul li a[href='/display/Electric'] { background-color: #F8D030; color: #604f0c}
+        nav ul li a[href='/display/Fairy'] { background-color: #EE99AC; color: #774a54}
+        nav ul li a[href='/display/Fighting'] { background-color: #C03028; color: #f3c4bd}
+        nav ul li a[href='/display/Fire'] { background-color: #F08030; color: #fdceb2}
+        nav ul li a[href='/display/Flying'] { background-color: #A890F0; color: #ede9fd}
+        nav ul li a[href='/display/Ghost'] { background-color: #705898; color: #e1dceb}
+        nav ul li a[href='/display/Grass'] { background-color: #78C850; color: #d7efcd}
+        nav ul li a[href='/display/Ground'] { background-color: #E0C068; color: #705f30}
+        nav ul li a[href='/display/Ice'] { background-color: #98D8D8; color: #4a6b6b}
+        nav ul li a[href='/display/Normal'] { background-color: #A8A878; color: #dbdcc8}
+        nav ul li a[href='/display/Poison'] { background-color: #A040A0; color: #eed9ec}
+        nav ul li a[href='/display/Psychic'] { background-color: #F85888; color: #ffd0da}
+        nav ul li a[href='/display/Rock'] { background-color: #B8A038; color: #e9e3c7}
+        nav ul li a[href='/display/Steel'] { background-color: #B8B8D0; color: #5b5b67}
+        nav ul li a[href='/display/Water'] { background-color: #6890F0; color: #d0defd}
+        nav ul li a[href='/display/0'] { background-color: #B3A125; color: #e7e3c4}
+        nav ul li a[href='/display/1'] { background-color: #F08030; color: #fdceb2}
+        nav ul li a[href='/display/All Pokémon'] { background: linear-gradient(to bottom, red 50%, white 50%); color: #000000}
     </style>
 </head>
 <body>
@@ -35,68 +36,68 @@
     <nav>
         <ul>
             <li>
-                <a href="/" onmouseover="this.style.color='#a2d5a2'" onmouseout="this.style.color='#ffffff'">Home</a>
+                <a href="/">Home</a>
             <li>
-                <a href="/display/Bug" onmouseover="this.style.color='#3f4506'" onmouseout="this.style.color='#ffffff'">Bug</a>
+                <a href="/display/Bug">Bug</a>
             </li>
             <li>
-                <a href="/display/Dark" onmouseover="this.style.color='#c4b9b2'" onmouseout="this.style.color='#ffffff'">Dark</a>
+                <a href="/display/Dark">Dark</a>
             </li>
             <li>
-                <a href="/display/Dragon" onmouseover="this.style.color='#dedcff'" onmouseout="this.style.color='#ffffff'">Dragon</a>
+                <a href="/display/Dragon">Dragon</a>
             </li>
             <li>
-                <a href="/display/Electric" onmouseover="this.style.color='#453906'" onmouseout="this.style.color='#ffffff'">Electric</a>
+                <a href="/display/Electric">Electric</a>
             </li>
             <li>
-                <a href="/display/Fairy" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Fairy</a>
+                <a href="/display/Fairy">Fairy</a>
             </li>
             <li>
-                <a href="/display/Fighting" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Fighting</a>
+                <a href="/display/Fighting">Fighting</a>
             </li>
             <li>
-                <a href="/display/Fire" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Fire</a>
+                <a href="/display/Fire">Fire</a>
             </li>
             <li>
-                <a href="/display/Flying" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Flying</a>
+                <a href="/display/Flying">Flying</a>
             </li>
             <li>
-                <a href="/display/Ghost" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Ghost</a>
+                <a href="/display/Ghost">Ghost</a>
             </li>
             <li>
-                <a href="/display/Grass" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Grass</a>
+                <a href="/display/Grass">Grass</a>
             </li>
             <li>
-                <a href="/display/Ground" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Ground</a>
+                <a href="/display/Ground">Ground</a>
             </li>
             <li>
-                <a href="/display/Ice" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Ice</a></li>
+                <a href="/display/Ice">Ice</a></li>
             <li>
-                <a href="/display/Normal" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Normal</a>
+                <a href="/display/Normal">Normal</a>
             </li>
             <li>
-                <a href="/display/Poison" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Poison</a>
+                <a href="/display/Poison">Poison</a>
             </li>
             <li>
-                <a href="/display/Psychic" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Psychic</a>
+                <a href="/display/Psychic">Psychic</a>
             </li>
             <li>
-                <a href="/display/Rock" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Rock</a>
+                <a href="/display/Rock">Rock</a>
             </li>
             <li>
-                <a href="/display/Steel" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Steel</a>
+                <a href="/display/Steel">Steel</a>
             </li>
             <li>
-                <a href="/display/Water" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Water</a>
+                <a href="/display/Water">Water</a>
             </li>
             <li>
-                <a href="/display/0" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Non Legendary</a>
+                <a href="/display/0">Non Legendary</a>
             </li>
             <li>
-                <a href="/display/1" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">Legendary</a>
+                <a href="/display/1">Legendary</a>
             </li>
             <li>
-                <a href="/display/All Pokémon" onmouseover="this.style.color='#c85050'" onmouseout="this.style.color='#ffffff'">All Pokémon</a>
+                <a href="/display/All Pokémon">All Pokémon</a>
             </li>
             <li>
                 <form method="post" action="/search">
